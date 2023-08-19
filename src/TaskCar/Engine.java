@@ -11,6 +11,7 @@ public class Engine {
         this.hp = hp;
         this.torque = torque;
         this.capacity = capacity;
+
     }
 
     public int getHp(){
@@ -37,5 +38,15 @@ public class Engine {
         this.capacity = capacity;
     }
 
+    public boolean isEngineOn(){
+        return this.isOn;
+    }
 
+    public void turnOn(){
+        this.isOn = true;
+    }
+
+    public void turnOff(){
+        this.isOn = false;
+    }
 }
