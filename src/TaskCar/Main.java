@@ -11,6 +11,6 @@ public class Main {
         System.out.println(car.isLightsOn());
         car.turnOnLights();
         System.out.println(car.isEngineOn());
-
+        car.turnOnLights();
     }
 }
