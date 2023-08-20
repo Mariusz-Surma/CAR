@@ -7,12 +7,14 @@ public class Car {
     private String mark;
     private Engine engine;
     private Lights lights;
+    private Tires tires;
 
     public Car(String model, String mark){
         this.model = model;
         this.mark = mark;
         this.engine = new Engine(320, 400.0f, 2.5);
         this.lights = new Lights(500, 55.5f);
+        this.tires = new Tires("Michelin", 20, "Y", 90);
     }
 
 
@@ -59,4 +61,7 @@ public class Car {
     public boolean isLightsOn() {
         return this.lights.isLightsOn();
     }
+
+
+
 }
