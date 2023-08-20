@@ -62,6 +62,14 @@ public class Car {
         return this.lights.isLightsOn();
     }
 
+    public void showTiresProducer(){
+        System.out.println("Producent opon to:");
+        System.out.println(tires.getProducer());
 
+    }
 
+    public void showSizeInches(){
+        System.out.println("Rozmiar opon w calach to:");
+        System.out.println(tires.getSizeInches());
+    }
 }
